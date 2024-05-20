@@ -18,7 +18,6 @@ FROM openjdk:8-jdk-alpine
 
 WORKDIR /app
 
-EXPOSE 8080
 COPY --from=builder /app/target/ysoserial.jar .
-
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "ysoserial.jar"]
