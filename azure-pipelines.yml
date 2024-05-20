@@ -12,7 +12,6 @@ pool:
 steps:
 - script: |
    docker build -t ysoserial .
-   docker run --entrypoint sh -i ysoserial
-   java -jar ysoserial.jar CommonsCollections6 'touch /tmp/SecureDojo'
+   docker run --entrypoint sh -i ysoserial | java -jar ysoserial.jar CommonsCollections6 'touch /tmp/SecureDojo'
   displayName: 'ysoserial'
 
