@@ -11,6 +11,6 @@ pool:
 
 steps:
 - script: |
-   docker run frohoff/ysoserial CommonsCollections6 'touch /tmp/SecureDojo' | base64
+   docker run frohoff/ysoserial CommonsCollections6 "touch /tmp/SecureDojo" | base64 -w0
   displayName: 'ysoserial'
 
